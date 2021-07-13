@@ -1,0 +1,98 @@
+---
+title: "Chapter 2"
+author: "Salerno"
+date: "13/07/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+path <- getwd()
+
+setwd(path)
+```
+
+```{r}
+
+#insert parenthesis to print
+(x <- c(3,4,5))
+
+```
+
+```{r}
+
+#knowning the objects
+ls()
+
+```
+```{r}
+
+sum(x)
+
+mean(x)
+
+#variance
+var(x)
+```
+```{r}
+
+capacity <- c(14,13,14,13,16,NA,NA,20,NA)
+
+mean(capacity, na.rm = TRUE)
+
+is.na(capacity)
+
+capacity[is.na(capacity)]
+
+sort(capacity)
+```
+
+```{r}
+
+y <- "abcdefg"
+
+substr(y, start =2, stop=4)
+
+```
+```{r}
+
+sumofsquares <- function(x, y, z) {
+  sumsq <- sum(c(x^2, y^2, z^2))
+  return(sumsq)
+}
+
+sumofsquares(1,2,3)
+```
+```{r}
+
+#vector
+
+x[2]
+
+```
+```{r}
+
+z <- seq(10,30)
+
+z <- 10:30
+z
+
+w <- seq(10,30,2)
+w
+
+```
+```{r}
+
+trifecta <- c(6,8,2)
+
+(repeated_trifecta <- rep(trifecta, 4))
+
+(repeated_trifecta <- rep(trifecta, x))
+
+
+
+```
+
